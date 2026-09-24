@@ -131,3 +131,19 @@ student("CSE", 21, name="Chandu", city="Mandya")
 # Stores as	Tuple	Dictionary
 # Example	10, 20, 30	name="Chandu", age=21
 # Meaning	Any number of values	Any number of named values
+
+
+# 1. Student marks calculator — *args
+
+# Suppose you don't know how many subjects a student has:
+
+def calculate_marks(*marks):
+    total = sum(marks)
+    average = total / len(marks)
+
+    print("Marks:", marks)
+    print("Total:", total)
+    print("Average:", average)
+
+
+calculate_marks(85, 76, 91, 88, 79)
