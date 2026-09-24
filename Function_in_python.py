@@ -147,3 +147,14 @@ def calculate_marks(*marks):
 
 
 calculate_marks(85, 76, 91, 88, 79)
+
+
+#Shopping cart — *args
+def shopping_cart(*items):
+    print("Your cart:")
+
+    for item in items:
+        print("🛒", item)
+
+
+shopping_cart("Laptop", "Mouse", "Keyboard", "Headphones")
