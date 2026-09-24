@@ -158,3 +158,22 @@ def shopping_cart(*items):
 
 
 shopping_cart("Laptop", "Mouse", "Keyboard", "Headphones")
+
+
+# 3. Student profile — **kwargs
+
+# This is a very realistic use of **kwargs:
+
+def create_profile(**details):
+    print("Student Profile")
+
+    for key, value in details.items():
+        print(key, ":", value)
+
+
+create_profile(
+    name="Chandu",
+    branch="CSE",
+    year=4,
+    skills=["Java", "Python", "SQL"]
+)
